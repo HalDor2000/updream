@@ -4,21 +4,25 @@
         {{-- TEXTO --}}
         <div class="max-w-[540px]">
             <h2
-                class="relative mb-10 w-fit font-heading text-[46px] font-extrabold uppercase leading-[0.9] tracking-[0.34em] text-[#4966ea] md:text-[64px]">
+                class="
+        relative
+        mb-10
+        w-fit
+        font-heading
+        text-[46px]
+        font-bold
+        uppercase
+        leading-[0.95]
+        tracking-[0.24em]
+        text-[#4966ea]
+        md:text-[64px]
+    ">
                 <span class="relative inline-block">
                     Social
-                    <span
-                        class="absolute left-[92px] top-[18px] text-[34px] leading-none text-[#ff5b12] md:left-[126px] md:top-[24px] md:text-[44px]">
-                        ✦
-                    </span>
                 </span>
                 <br>
                 <span class="relative ml-[70px] inline-block md:ml-[96px]">
                     Media
-                    <span
-                        class="absolute -right-[30px] top-[4px] text-[34px] leading-none text-[#ff5b12] md:-right-[44px] md:top-[8px] md:text-[44px]">
-                        ◖
-                    </span>
                 </span>
             </h2>
 
@@ -40,7 +44,7 @@
                 <span class="text-[32px] leading-none text-[#ff5b12]">✦</span>
 
                 <a href="#contacto"
-                    class="inline-flex items-center rounded-full bg-[#4966ea] px-7 py-2 text-[18px] font-medium-bold uppercase tracking-[0.14em] text-white transition hover:bg-[#3454d8]">
+                    class="inline-flex items-center rounded-full bg-[#4966ea] px-7 py-2 text-[18px] font-medium uppercase tracking-[0.14em] text-white transition hover:bg-[#3454d8]">
                     Contáctanos
                 </a>
             </div>

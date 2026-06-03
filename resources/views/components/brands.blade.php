@@ -7,7 +7,7 @@
 
         <div class="max-w-7xl mx-auto px-6">
 
-            <h2 class="text-center text-5xl font-bold tracking-[0.15em] mb-4">
+            <h2 class="font-heading text-center text-5xl font-bold tracking-[0.15em] mb-4">
                 MARCAS
             </h2>
 

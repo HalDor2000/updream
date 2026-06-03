@@ -3,6 +3,9 @@
     'titleLine1',
     'titleLine2' => null,
     'titleLine3' => null,
+    'titleClass1' => '',
+    'titleClass2' => '',
+    'titleClass3' => '',
     'imagePosition' => 'left',
     'imageAlt' => '',
 ])
@@ -24,29 +27,29 @@
     <div class="{{ $contentOrder }} flex flex-col {{ $contentAlign }}">
         <h2
             class="
-                mb-8
-                w-fit
-                font-heading
-                text-[30px]
-                font-extrabold
-                uppercase
-                leading-[0.96]
-                tracking-[0.26em]
-                text-[#4966ea]
-                sm:text-[38px]
-                md:text-[48px]
-                md:tracking-[0.32em]
+            mb-8
+            w-fit
+            font-heading
+            uppercase
+            text-[#4966ea]
+            leading-[1.05]
             ">
-            <span>{{ $titleLine1 }}</span>
+            <span class="{{ $titleClass1 }}">
+                {{ $titleLine1 }}
+            </span>
 
             @if ($titleLine2)
                 <br>
-                <span>{{ $titleLine2 }}</span>
+                <span class="{{ $titleClass2 }}">
+                    {{ $titleLine2 }}
+                </span>
             @endif
 
             @if ($titleLine3)
                 <br>
-                <span>{{ $titleLine3 }}</span>
+                <span class="{{ $titleClass3 }}">
+                    {{ $titleLine3 }}
+                </span>
             @endif
         </h2>
 

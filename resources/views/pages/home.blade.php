@@ -10,9 +10,11 @@
 
     <x-portfolio />
     <x-brands />
+    <x-cta />
     <x-service-social-media />
     <x-services />
-    <x-cta />
+    <x-brands-service />
+    
 
     <x-footer />
 
