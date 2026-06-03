@@ -1,4 +1,4 @@
-<footer class="bg-black text-white py-16 px-10">
+<footer id="contacto" class="bg-black text-white py-16 px-10">
 
     <div class="max-w-7xl mx-auto">
 

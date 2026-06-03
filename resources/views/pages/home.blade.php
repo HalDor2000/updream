@@ -4,12 +4,14 @@
 
     <x-about />
 
-    <x-brands />
+    <x-contact-section />
+
+
 
     <x-portfolio />
-
+    <x-brands />
+    <x-service-social-media />
     <x-services />
-
     <x-cta />
 
     <x-footer />

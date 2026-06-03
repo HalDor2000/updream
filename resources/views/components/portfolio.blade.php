@@ -1,4 +1,4 @@
-<section class="bg-white text-black py-32 px-10">
+<section id="portfolio"class="bg-white text-black py-32 px-10">
 
     <div class="max-w-7xl mx-auto">
 

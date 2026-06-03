@@ -1,112 +1,46 @@
-<section class="bg-[#0f172a] text-white py-32 px-10">
+<section id="services" class="bg-[#f6f6f3] px-6 pt-4 pb-20 text-black md:px-12 lg:px-20">
+    <div class="mx-auto max-w-[1180px]">
+        {{-- <div class="mb-14 flex justify-end pr-4 md:pr-20">
+            <img
+                src="{{ asset('img/decor/up-your-brand.png') }}"
+                alt="Up your brand"
+                class="w-full max-w-[300px] object-contain"
+            >
+        </div> --}}
 
-    <div class="max-w-7xl mx-auto">
+        <div class="space-y-16">
+            <x-service-block
+                image="img/services/diseno-branding.png"
+                image-alt="Diseño y branding Eat Nutrition"
+                image-position="left"
+                title-line-1="Diseño y"
+                title-line-2="Branding"
+            >
+                <p>
+                    Creamos identidades visuales que marcan la diferencia: colores,
+                    formas, tipografías y estilos que reflejan la esencia de tu
+                    negocio. Desde tu logo hasta el look completo de tu marca,
+                    diseñamos con intención para que cada detalle comunique quién eres
+                    y por qué te eligen.
+                </p>
+            </x-service-block>
 
-        <!-- HEADER -->
-        <div class="mb-20 text-center">
-
-            <p class="uppercase tracking-[0.3em] text-sm text-orange-400 mb-6">
-                Servicios
-            </p>
-
-            <h2 class="text-5xl font-bold">
-
-                Soluciones digitales
-                para hacer crecer tu marca
-
-            </h2>
-
+            <x-service-block
+                image="img/services/produccion.png"
+                image-alt="Producción audiovisual y fotografía"
+                image-position="right"
+                title-line-1="Producción"
+                title-line-2="Audio Visual y"
+                title-line-3="Fotografía"
+            >
+                <p>
+                    En un mundo tan visual, las fotos y videos que usas lo dicen todo
+                    sobre tu marca. Creamos contenido audiovisual que transmite
+                    emociones, valores y estilo. Desde sesiones de producto y retratos
+                    profesionales, hasta videos creativos y spots publicitarios,
+                    capturamos lo que hace única a tu marca.
+                </p>
+            </x-service-block>
         </div>
-
-        <!-- GRID -->
-        <div class="grid md:grid-cols-3 gap-10">
-
-            <!-- CARD -->
-            <div class="
-                bg-white/5
-                border border-white/10
-                rounded-3xl
-                p-10
-                backdrop-blur-sm
-                hover:bg-white/10
-                transition
-            ">
-
-                <div class="text-5xl mb-8">
-                    🚀
-                </div>
-
-                <h3 class="text-2xl font-bold mb-6">
-                    Marketing Digital
-                </h3>
-
-                <p class="text-gray-300 leading-8">
-
-                    Estrategias enfocadas en alcance,
-                    posicionamiento y conversión.
-
-                </p>
-
-            </div>
-
-            <!-- CARD -->
-            <div class="
-                bg-white/5
-                border border-white/10
-                rounded-3xl
-                p-10
-                backdrop-blur-sm
-                hover:bg-white/10
-                transition
-            ">
-
-                <div class="text-5xl mb-8">
-                    🎨
-                </div>
-
-                <h3 class="text-2xl font-bold mb-6">
-                    Branding
-                </h3>
-
-                <p class="text-gray-300 leading-8">
-
-                    Construimos marcas modernas,
-                    sólidas y memorables.
-
-                </p>
-
-            </div>
-
-            <!-- CARD -->
-            <div class="
-                bg-white/5
-                border border-white/10
-                rounded-3xl
-                p-10
-                backdrop-blur-sm
-                hover:bg-white/10
-                transition
-            ">
-
-                <div class="text-5xl mb-8">
-                    💻
-                </div>
-
-                <h3 class="text-2xl font-bold mb-6">
-                    Desarrollo Web
-                </h3>
-
-                <p class="text-gray-300 leading-8">
-
-                    Sitios modernos, rápidos y adaptados
-                    a cualquier dispositivo.
-
-                </p>
-
-            </div>
-
-        </div>
-
     </div>
-
 </section>
