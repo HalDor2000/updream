@@ -1,7 +1,9 @@
+
 <section
     class="relative bg-[#f5f5f5] text-black overflow-hidden
                 pt-8 md:pt-12 pb-0
                 min-h-[620px] sm:min-h-[680px] md:min-h-[760px] lg:min-h-[900px]">
+
     <!-- Solo texto dentro del contenedor centrado -->
     <div class="relative z-20 w-full pl-6 md:pl-28 lg:pl-40 xl:pl-48 pr-6">
         <div
@@ -12,7 +14,7 @@
                    md:max-w-[min(100%,34rem)] lg:max-w-[min(100%,36rem)] xl:max-w-[38vw]
                    py-12 md:py-16 lg:py-20">
 
-            <img src="{{ asset('img/logo.png') }}" alt="Up Dream" class="w-64 md:w-72 mb-6">
+            <img src="{{ asset('img/logo3.png') }}" alt="Up Dream" class="w-64 md:w-72 mb-6">
 
             <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-10 md:mb-12">
                 Somos el lugar ideal para darle vida a tus ideas,

@@ -1,81 +1,157 @@
-<section id="portfolio"class="bg-white text-black py-32 px-10">
+<section id="portfolio" class="relative overflow-hidden min-h-screen bg-[#f6f6f3] text-black  pb-40">
 
-    <div class="max-w-7xl mx-auto">
+    {{-- NAVBAR --}}
+    <x-navbar textColor="text-[#4966ea]" hoverColor="hover:border-orange-500" logo="img/logo-azul.png" />
 
-        <!-- TITULO -->
-        <div class="mb-20">
+    {{-- CONTENIDO --}}
+    <div class="max-w-7xl mx-auto px-6 pt-16">
 
-            <p class="uppercase tracking-[0.3em] text-sm text-gray-500 mb-6">
-                Portafolio
-            </p>
+        {{-- TITULO --}}
+        <div class="relative mb-16 flex flex-col items-center">
 
-            <h2 class="text-5xl font-bold">
-                Algunos de nuestros proyectos
+            {{-- Estrella --}}
+            <img src="{{ asset('img/decor/star-orange.png') }}" alt=""
+                class="
+                    absolute
+                    left-[180px]
+                    top-[-20px]
+                    w-16
+                ">
+
+            <h2
+                class="
+                    font-heading
+                    text-[72px]
+                    font-bold
+                    text-[#4966ea]
+                    leading-none
+                ">
+                Nuestros
             </h2>
+
+            <div
+                class="
+                    -mt-2
+                    rounded-[24px]
+                    bg-[#ff6b0a]
+                    px-8
+                    py-1
+                    rotate-[-3deg]
+                ">
+
+                <span
+                    class="
+                        text-[52px]
+                        font-bold
+                        text-white
+                    ">
+                    proyectos
+                </span>
+
+            </div>
 
         </div>
 
-        <!-- GRID -->
-        <div class="grid md:grid-cols-2 gap-10">
+        {{-- CONTENEDOR AZUL --}}
+        <div
+            class="
+                relative
+                rounded-[12px]
+                bg-[#3f56c8]
+                p-8
+            ">
 
-            <!-- CARD -->
-            <div class="group">
-
-                <div class="
-                    h-[400px]
-                    bg-gray-200
-                    rounded-3xl
-                    overflow-hidden
-                    transition
-                    duration-500
-                    group-hover:scale-[1.02]
+            {{-- FLECHA IZQUIERDA --}}
+            <button
+                class="
+                    absolute
+                    left-4
+                    top-1/2
+                    -translate-y-1/2
+                    text-5xl
+                    text-white
                 ">
-                </div>
+                ‹
+            </button>
 
-                <div class="mt-6">
+            {{-- IMAGEN --}}
+            <div class="flex justify-center">
 
-                    <h3 class="text-2xl font-bold mb-2">
-                        Branding Corporativo
-                    </h3>
+                <div class="flex w-full max-w-[1050px] overflow-hidden rounded-md">
 
-                    <p class="text-gray-600">
-                        Estrategia visual y posicionamiento digital.
-                    </p>
+                    <img src="{{ asset('img/portfolio/susanaportfolio.png') }}" alt="Susana Soriano"
+                        class="w-1/2 object-cover">
+
+                    <img src="{{ asset('img/portfolio/eatnutritionportfolio.png') }}" alt="Eat Nutrition"
+                        class="w-1/2 object-cover">
 
                 </div>
 
             </div>
 
-            <!-- CARD -->
-            <div class="group">
-
-                <div class="
-                    h-[400px]
-                    bg-gray-200
-                    rounded-3xl
-                    overflow-hidden
-                    transition
-                    duration-500
-                    group-hover:scale-[1.02]
+            {{-- BARRA INFERIOR --}}
+            <div
+                class="
+                    mt-6
+                    rounded-lg
+                    bg-[#3048b8]
+                    px-4
+                    py-3
                 ">
-                </div>
 
-                <div class="mt-6">
+                <div class="flex items-center gap-4">
 
-                    <h3 class="text-2xl font-bold mb-2">
-                        Social Media Campaign
-                    </h3>
+                    <span class="text-sm text-white">
+                        4-5 / 20
+                    </span>
 
-                    <p class="text-gray-600">
-                        Campañas digitales enfocadas en conversión.
-                    </p>
+                    <div
+                        class="
+                            h-1
+                            flex-1
+                            rounded
+                            bg-[#7c8ee7]
+                        ">
+
+                        <div
+                            class="
+                                h-full
+                                w-[25%]
+                                rounded
+                                bg-white
+                            ">
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
+
+            {{-- FLECHA DERECHA --}}
+            <button
+                class="
+                    absolute
+                    right-4
+                    top-1/2
+                    -translate-y-1/2
+                    text-5xl
+                    text-white
+                ">
+                ›
+            </button>
 
         </div>
 
     </div>
+
+    {{-- ESTRELLA INFERIOR --}}
+    <img src="{{ asset('img/decor/star-orange.png') }}" alt=""
+        class="
+            absolute
+            bottom-8
+            right-8
+            w-28
+        ">
 
 </section>

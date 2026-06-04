@@ -1,3 +1,10 @@
+<style>
+    .gradient-bg {
+        background: linear-gradient(135deg, #FF4500 0%, #6A5ACD 50%, #4169E1 100%);
+        background-attachment: fixed;
+        
+    }
+</style>
 <section>
     <!--=====================-->
     <!-- MARCAS -->
@@ -60,7 +67,7 @@
     </div>
 
     <!-- CONTACT SECTION -->
-    <div
+  {{--   <div
         class="
         relative
         overflow-hidden
@@ -70,7 +77,16 @@
         from-orange-500
         via-[#9f76c4]
         to-[#4966ea]
-    ">
+      "> --}}
+
+       <div
+        class="gradient-bg
+        relative
+        overflow-hidden
+        py-12
+        text-white
+       
+      ">
 
         <!-- DECORACION IZQUIERDA -->
         <img src="{{ asset('img/cta/lineas2.png') }}" alt=""
@@ -78,7 +94,7 @@
             absolute
             left-0
             bottom-0
-            h-[340px]
+            h-[440px]
             opacity-90
         ">
 
@@ -144,21 +160,11 @@
                 <div class="relative">
 
                     <!-- FOTO -->
-                    <img src="{{ asset('img/cta/portatil2.png') }}" alt="Up Dream"
-                        class="
-                        w-full
-                        max-w-[580px]
-                        rounded-[2rem]
-                    ">
+                    <div class="overflow-hidden max-w-[580px] shadow-lg">
+                        <img src="{{ asset('img/cta/portatil2.png') }}" alt="Up Dream" class="block w-full">
+                    </div>
 
-                    <!-- SELLO -->
-                    <img src="{{ asset('img/cta/sello.png') }}" alt=""
-                        class="
-                        absolute
-                        -top-8
-                        -right-6
-                        h-28
-                    ">
+
 
                     <!-- PIE -->
                     <div

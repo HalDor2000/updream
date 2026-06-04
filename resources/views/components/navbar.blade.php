@@ -1,27 +1,71 @@
+@props([
+    'textColor' => 'text-white',
+    'lineColor' => 'border-white',
+    'hoverColor' => 'hover:border-white',
+    'logo' => 'img/logo2.png',
+])
+
 <nav class="relative z-10 flex items-center justify-between px-16 py-10">
 
     <div class="flex gap-16 font-semibold uppercase text-xl">
 
-        <a href="#inicio" class="border-b-4 border-white pb-1 hover:text-orange-300 transition">
+        <a href="#inicio"
+            class="
+                {{ $textColor }}
+                border-b-4
+                border-transparent
+                pb-1
+                transition-all
+                duration-300
+                {{ $hoverColor }}
+            ">
             Inicio
         </a>
 
-        <a href="#portfolio" class="hover:text-orange-300 transition">
+        <a href="#portfolio"
+            class="
+                {{ $textColor }}
+                border-b-4
+                border-transparent
+                pb-1
+                transition-all
+                duration-300
+                {{ $hoverColor }}
+            ">
             Portafolio
         </a>
 
-        <a href="#services" class="hover:text-orange-300 transition">
+        <a href="#services"
+            class="
+                {{ $textColor }}
+                border-b-4
+                border-transparent
+                pb-1
+                transition-all
+                duration-300
+                {{ $hoverColor }}
+            ">
             Servicios
         </a>
 
-        <a href="#contacto" class="hover:text-orange-300 transition">
+        <a href="#contacto"
+            class="
+                {{ $textColor }}
+                border-b-4
+                border-transparent
+                pb-1
+                transition-all
+                duration-300
+                {{ $hoverColor }}
+            ">
             Contáctanos
         </a>
 
     </div>
 
-    <div>
-        <img src="{{ asset('img/logo2.png') }}" alt="Up Dream" class="h-20 md:h-28 w-auto">
-    </div>
+    <img
+        src="{{ asset($logo) }}"
+        alt="Up Dream"
+        class="h-20 md:h-28 w-auto">
 
 </nav>

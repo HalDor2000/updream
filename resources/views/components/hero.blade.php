@@ -1,5 +1,7 @@
 <section id="inicio"
-    class="relative overflow-hidden min-h-screen bg-gradient-to-br from-orange-500 via-purple-500 to-blue-600 text-white">
+     class="relative overflow-hidden min-h-screen bg-gradient-to-br from-orange-500 via-purple-500 to-blue-600 text-white"> 
+    
+    
     <style>
         .hero-nav {
             height: 110px;
@@ -12,16 +14,27 @@
         }
 
         .hero-nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            letter-spacing: 1px;
-            font-weight: 500;
-            padding-bottom: 10px;
+            position: relative;
+            color: white;
         }
 
-        .hero-nav a.active {
-            border-bottom: 4px solid #fff;
+        .hero-nav a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 4px;
+            background: white;
+            transition: width .25s ease;
+        }
+
+        .hero-nav a:hover::after {
+            width: 100%;
+        }
+
+        .hero-nav a.active::after {
+            width: 100%;
         }
 
         .logo {
@@ -72,6 +85,8 @@
             line-height: 1.25;
             font-weight: 500;
         }
+
+      
     </style>
 
     <!-- GLOW -->
@@ -94,8 +109,7 @@
 
     </div>
 
-    <x-navbar />
-
+    <x-navbar textColor="text-white" hoverColor="hover:border-white" logo="img/logo.png" />
     <!-- HERO -->
     <div class="relative z-10 flex flex-col items-center justify-center text-center pt-40 px-6">
 
