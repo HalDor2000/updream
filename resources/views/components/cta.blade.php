@@ -1,41 +1,108 @@
-<section class="bg-gradient-to-r from-orange-500 to-purple-600 text-white py-32 px-10">
+<section
+    id="cta"
+    class="
+        relative
+        overflow-hidden
+        min-h-screen
+        bg-[#4d67ea]
+        text-white
+    "
+>
 
-    <div class="max-w-5xl mx-auto text-center">
+    <!-- GRID FONDO -->
+    <div
+        class="
+            absolute
+            inset-0
+            opacity-15
+            pointer-events-none
+        "
+        style="
+            background-image:
+            linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px);
+            background-size: 55px 55px;
+        "
+    ></div>
 
-        <p class="uppercase tracking-[0.3em] text-sm mb-6 opacity-80">
-            Comencemos
+    <!-- LINEA NARANJA -->
+    <img
+        src="{{ asset('img/cta/linea-naranja.png') }}"
+        alt=""
+        class="
+            absolute
+            right-0
+            top-20
+            h-[100vh]
+           {{--  opacity-60 --}}
+            pointer-events-none
+        "
+    >
+
+    <!-- NAVBAR -->
+    <x-navbar
+        textColor="text-white"
+        hoverColor="hover:border-white"
+        logo="img/logo.png"
+    />
+
+    <!-- CONTENIDO -->
+    <div
+        class="
+            relative
+            z-10
+            flex
+            flex-col
+            items-center
+            justify-center
+            text-center
+            min-h-[75vh]
+            px-6
+        "
+    >
+
+        <!-- TEXTO SUPERIOR -->
+        <p
+            class="
+                uppercase
+                tracking-[0.20em]
+                text-2xl
+                md:text-3xl
+                mb-6
+            "
+        >
+            TRAIN WITH THE BEST
         </p>
 
-        <h2 class="text-5xl md:text-7xl font-bold leading-tight mb-10">
+        <!-- TITULO -->
+        <div class="relative">
 
-            ¿Listo para llevar
-            tu marca al siguiente nivel?
+            <!-- ESTRELLA -->
+            <img
+                src="{{ asset('img/decor/star-orange.png') }}"
+                alt=""
+                class="
+                    absolute
+                    -left-16
+                    top-4
+                    w-24
+                "
+            >
 
-        </h2>
+            <h2
+                class="
+                    text-6xl
+                    md:text-8xl
+                    font-bold
+                    leading-none
+                "
+            >
+                Te llevamos
+                <br>
+                al próximo nivel
+            </h2>
 
-        <p class="text-xl opacity-90 mb-14">
-
-            Creamos experiencias digitales modernas
-            enfocadas en impacto y crecimiento.
-
-        </p>
-
-        <button class="
-            bg-white
-            text-black
-            px-10
-            py-5
-            rounded-full
-            text-lg
-            font-semibold
-            hover:scale-105
-            transition
-            duration-300
-        ">
-
-            Contáctanos
-
-        </button>
+        </div>
 
     </div>
 
