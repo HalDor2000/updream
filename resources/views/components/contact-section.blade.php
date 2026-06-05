@@ -1,7 +1,7 @@
 <style>
     .gradient-bg {
         background: linear-gradient(135deg, #FF4500 0%, #6A5ACD 50%, #4169E1 100%);
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         
     }
 </style>
