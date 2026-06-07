@@ -1,5 +1,20 @@
-<footer id="contacto" class="bg-black text-white py-16 px-10">
+<style>
+    .gradient-bg {
+        background: linear-gradient(135deg, #FF4500 0%, #6A5ACD 50%, #4169E1 100%);
+        /* background-attachment: fixed; */
 
+    }
+</style>
+
+<footer id="contacto"
+    class="gradient-bg
+        relative
+        overflow-hidden
+        py-12
+        text-white
+      ">
+    <div class="absolute top-0 left-0 w-full h-[2px] bg-white"></div>
+    <x-navbar textColor="text-white" hoverColor="hover:border-white" logo="img/logo.png" />
     <div class="max-w-7xl mx-auto">
 
         <div class="flex flex-col md:flex-row justify-between gap-10">

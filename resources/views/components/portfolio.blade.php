@@ -4,53 +4,24 @@
     <x-navbar textColor="text-[#4966ea]" hoverColor="hover:border-orange-500" logo="img/logo-azul.png" />
 
     {{-- CONTENIDO --}}
-    <div class="max-w-7xl mx-auto px-6 pt-16">
+    <div class="max-w-7xl mx-auto px-6 pt-8">
 
-        {{-- TITULO --}}
-        <div class="relative mb-16 flex flex-col items-center">
+      {{-- TITULO SVG --}}
+<div class="mb-14 flex justify-center">
 
-            {{-- Estrella --}}
-            <img src="{{ asset('img/decor/star-orange.png') }}" alt=""
-                class="
-                    absolute
-                    left-[180px]
-                    top-[-20px]
-                    w-16
-                ">
+    <img
+        src="{{ asset('img/portfolio/nuestros_proyectos.svg') }}"
+        alt="Nuestros proyectos"
+        class="
+            w-[320px]
+            sm:w-[420px]
+            md:w-[520px]
+            lg:w-[620px]
+            xl:w-[700px]
+            h-auto
+        ">
 
-            <h2
-                class="
-                    font-heading
-                    text-[72px]
-                    font-bold
-                    text-[#4966ea]
-                    leading-none
-                ">
-                Nuestros
-            </h2>
-
-            <div
-                class="
-                    -mt-2
-                    rounded-[24px]
-                    bg-[#ff6b0a]
-                    px-8
-                    py-1
-                    rotate-[-3deg]
-                ">
-
-                <span
-                    class="
-                        text-[52px]
-                        font-bold
-                        text-white
-                    ">
-                    proyectos
-                </span>
-
-            </div>
-
-        </div>
+</div>
 
         {{-- CONTENEDOR AZUL --}}
         <div

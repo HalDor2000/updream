@@ -1,137 +1,205 @@
-<section>
+<section id="services" class="
+        relative
+        overflow-hidden
+        text-white
+        min-h-screen
+    "
+    style="
+        background-image:url('{{ asset('img/backgrounds/brands-bg.webp') }}');
+        background-size:100% 100%;
+        background-position:center;
+        background-repeat:no-repeat;
+    ">
 
-    <!-- ===================== -->
-    <!-- MARCAS -->
-    <!-- ===================== -->
-    <div class="bg-[#4966ea] text-white py-16">
+    <div class="max-w-7xl mx-auto px-8">
 
-        <div class="max-w-7xl mx-auto px-6">
+        {{-- ====================================== --}}
+        {{-- MARCAS --}}
+        {{-- ====================================== --}}
+        <div class="pt-12">
 
-            <h2 class="font-heading text-center text-5xl font-bold tracking-[0.15em] mb-4">
-                MARCAS
+            <h2 class="
+                    text-center
+                    font-bold
+                    tracking-[0.2em]
+                    uppercase
+                "
+                style="
+                    font-size: clamp(2rem,2.5vw,3rem);
+                ">
+                Marcas
             </h2>
 
-            <div class="flex justify-center mb-14">
+            <div class="flex justify-center mt-4">
 
-                <div
-                    class="
+                <div class="
                         bg-orange-500
                         border-2
                         border-white
                         rounded-full
                         px-10
                         py-3
-                        text-2xl
                         font-bold
                         uppercase
-                        tracking-wide
+                    "
+                    style="
+                        font-size: clamp(1rem,1.3vw,1.6rem);
                     ">
                     Que han confiado en nosotros
                 </div>
 
             </div>
 
-            <div class="flex items-center justify-center gap-16">
+            {{-- Logos --}}
+            <div
+                class="
+                    mt-16
+                    flex
+                    justify-center
+                    items-center
+                    gap-12
+                    flex-wrap
+                ">
 
-                <img src="{{ asset('img/marcas/vitamina.png') }}" alt="Vitamina Mental" class="h-24 object-contain">
+                <img src="{{ asset('img/marcas/vitamina.png') }}" alt="" class="h-[80px] object-contain">
 
-                <img src="{{ asset('img/marcas/salvatier.png') }}" alt="Salvatier" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/salvatier.png') }}" alt="" class="h-[70px] object-contain">
 
-                <img src="{{ asset('img/marcas/susana.png') }}" alt="Susana Soriano" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/susana.png') }}" alt="" class="h-[70px] object-contain">
 
-                <img src="{{ asset('img/marcas/eat.png') }}" alt="Eat Nutrition" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/eat.png') }}" alt="" class="h-[70px] object-contain">
 
-                <img src="{{ asset('img/marcas/twin.png') }}" alt="Twins Garage" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/twin.png') }}" alt="" class="h-[70px] object-contain">
 
-                <button
-                    class="
+                <span class="
                         text-5xl
                         font-light
-                        hover:text-orange-300
-                        transition
-                        cursor-pointer
                     ">
                     »
-                </button>
+                </span>
 
             </div>
 
         </div>
 
-    </div>
+        {{-- ====================================== --}}
+        {{-- CTA --}}
+        {{-- ====================================== --}}
+        <div class="
+        mt-24
+        pb-16
+    ">
 
-    <!-- ===================== -->
-    <!-- CTA -->
-    <!-- ===================== -->
-    <div
-        class="
-            py-24
-            text-white
-            bg-gradient-to-r
-            from-orange-500
-            via-[#b96da8]
-            to-[#4966ea]
+            <h2 class="
+            text-center
+            font-bold
+            uppercase
+            leading-tight
+        "
+                style="
+            font-size: clamp(2.5rem,4vw,5rem);
         ">
-
-        <div class="max-w-4xl mx-auto text-center">
-
-            <div class="text-4xl mb-8">
-                ✦
-            </div>
-
-            <h2 class="text-5xl font-bold uppercase tracking-wide leading-tight">
-
-                ¿Estás listo
+                ¿ESTÁS LISTO
                 <br>
-                para elevar tu marca?
-
+                PARA ELEVAR TU MARCA?
             </h2>
 
-            <a href="#contacto"
+            <div
                 class="
+            mt-12
+            grid
+            grid-cols-[0.7fr_1.3fr]
+            gap-10
+            items-center
+        ">
+
+                {{-- TEXTO --}}
+                <div class="max-w-[430px]">
+
+                    <a href="#contacto"
+                        class="
                     inline-block
-                    mt-10
-                    px-10
-                    py-3
                     bg-orange-500
                     border-2
                     border-white
                     rounded-full
-                    text-2xl
+                    px-10
+                    py-3
                     font-bold
                     uppercase
-                    hover:scale-105
-                    transition
+                    text-2xl
                 ">
-                Contáctanos
-            </a>
+                        Contáctanos
+                    </a>
 
-            <div class="flex justify-center items-center gap-6 mt-10">
+                    <p class="
+                    mt-8
+                    leading-relaxed
+                "
+                        style="
+                    font-size: clamp(1.2rem,1.4vw,1.8rem);
+                ">
+                        Tu idea ya es genial,
+                        solo necesita el impulso correcto.
+                    </p>
 
-                <a href="#" target="_blank">
-                    <img src="{{ asset('img/social/tiktok.png') }}" alt="TikTok"
-                        class="h-10 w-10 hover:scale-110 transition">
-                </a>
+                    <p class="
+                    mt-8
+                    leading-relaxed
+                "
+                        style="
+                    font-size: clamp(1.2rem,1.4vw,1.8rem);
+                ">
+                        Escríbenos y empecemos a crear
+                        algo increíble juntos.
+                    </p>
 
-                <a href="#" target="_blank">
-                    <img src="{{ asset('img/social/instagram.png') }}" alt="Instagram"
-                        class="h-10 w-10 hover:scale-110 transition">
-                </a>
+                </div>
 
-                <a href="#" target="_blank">
-                    <img src="{{ asset('img/social/facebook.png') }}" alt="Facebook"
-                        class="h-10 w-10 hover:scale-110 transition">
-                </a>
+                {{-- IMAGEN --}}
+                <div
+                    class="
+                relative
+                max-w-[950px]
+                ml-auto
+            ">
 
-                <a href="#" target="_blank">
-                    <img src="{{ asset('img/social/whatsap.png') }}" alt="WhatsApp"
-                        class="h-10 w-10 hover:scale-110 transition">
-                </a>
+                    <img src="{{ asset('img/cta/portatil2.png') }}" alt=""
+                        class="
+                    w-full
+                    h-auto
+                ">
+
+                    {{-- LOGO + REDES --}}
+                    <div
+                        class="
+                    flex
+                    items-center
+                    justify-between
+                    mt-4
+                    px-4
+                ">
+
+                        <img src="{{ asset('img/logo.png') }}" alt="" class="h-12">
+
+                        <div class="flex items-center gap-5">
+
+                            <img src="{{ asset('img/social/tiktok.png') }}" class="h-8">
+
+                            <img src="{{ asset('img/social/instagram.png') }}" class="h-8">
+
+                            <img src="{{ asset('img/social/facebook.png') }}" class="h-8">
+
+                            <img src="{{ asset('img/social/whatsap.png') }}" class="h-8">
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
-
-    </div>
 
 </section>

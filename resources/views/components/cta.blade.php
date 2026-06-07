@@ -1,108 +1,88 @@
-<section
-    id="cta"
+<section id="services"
     class="
         relative
         overflow-hidden
         min-h-screen
         bg-[#4d67ea]
         text-white
-    "
->
-
+    ">
+   <div class="absolute top-0 left-0 w-full h-[2px] bg-white"></div>
     <!-- GRID FONDO -->
-    <div
-        class="
+    <div class="
             absolute
             inset-0
-            opacity-15
+            opacity-55
             pointer-events-none
         "
         style="
             background-image:
             linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px),
             linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px);
-            background-size: 55px 55px;
-        "
-    ></div>
+            background-size: 75px 100px;
+        ">
+    </div>
 
     <!-- LINEA NARANJA -->
-    <img
+    {{--  <img
         src="{{ asset('img/cta/linea-naranja.png') }}"
         alt=""
         class="
             absolute
             right-0
-            top-20
+            top-0
             h-[100vh]
-           {{--  opacity-60 --}}
             pointer-events-none
         "
-    >
+    > --}}
+    <img src="{{ asset('img/cta/linea-naranja.png') }}" alt=""
+        class="
+        absolute
+        right-[-1%]
+        top-[-11%]
+        w-[100vw]
+        
+        max-w-none
+               h-auto
+        pointer-events-none
+    ">
 
     <!-- NAVBAR -->
-    <x-navbar
-        textColor="text-white"
-        hoverColor="hover:border-white"
-        logo="img/logo.png"
-    />
+    <x-navbar textColor="text-white" hoverColor="hover:border-white" logo="img/logo.png" />
 
     <!-- CONTENIDO -->
     <div
         class="
-            relative
-            z-10
-            flex
-            flex-col
-            items-center
-            justify-center
-            text-center
-            min-h-[75vh]
-            px-6
-        "
-    >
+        relative
+        z-10
+        flex
+        flex-col
+        items-center
+        justify-start
+        text-center
+        {{-- min-h-[55vh] --}}
+        pt-10
+        px-6
+    ">
 
-        <!-- TEXTO SUPERIOR -->
-        <p
-            class="
-                uppercase
-                tracking-[0.20em]
-                text-2xl
-                md:text-3xl
-                mb-6
-            "
-        >
-            TRAIN WITH THE BEST
-        </p>
 
-        <!-- TITULO -->
-        <div class="relative">
+        <!-- TITULO SVG -->
+        <div class="relative flex flex-col items-center">
 
-            <!-- ESTRELLA -->
-            <img
-                src="{{ asset('img/decor/star-orange.png') }}"
-                alt=""
-                class="
-                    absolute
-                    -left-16
-                    top-4
-                    w-24
-                "
-            >
 
-            <h2
-                class="
-                    text-6xl
-                    md:text-8xl
-                    font-bold
-                    leading-none
-                "
-            >
-                Te llevamos
-                <br>
-                al próximo nivel
-            </h2>
+           <img
+    src="{{ asset('img/cta/proximo_nivel.svg') }}"
+    alt="Te llevamos al próximo nivel"
+    class="
+        w-[57vw]
+        max-w-[950px]
+        min-w-[450px]
+        h-auto
+    "
+>
 
         </div>
+
+    </div>
 
     </div>
 

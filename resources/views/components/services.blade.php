@@ -1,4 +1,4 @@
-<section id="services" class="bg-[#f6f6f3] px-6 pt-4 pb-20 text-black md:px-12 lg:px-20">
+<section id="#" class="bg-[#f6f6f3] px-6 pt-4 pb-20 text-black md:px-12 lg:px-20">
     <div class="mx-auto max-w-[1180px]">
         {{-- <div class="mb-14 flex justify-end pr-4 md:pr-20">
             <img

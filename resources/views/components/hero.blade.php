@@ -1,158 +1,118 @@
 <section id="inicio" class="
-    hero-gradient
-    relative
-    overflow-hidden
-    min-h-screen
-    text-white
-  ">
-    <style>
-        .hero-gradient {
-            background:
-                radial-gradient(circle at 20% 20%,
-                    rgba(255, 90, 0, .75) 0%,
-                    transparent 40%),
+        relative
+        overflow-hidden
+        min-h-screen
+        text-white
+    "
+    style="
+        background-image:url('{{ asset('img/hero/hero-bg.webp') }}');
+        background-size:100% 100%;
+        background-position:center;
+        background-repeat:no-repeat;
+    ">
 
-                radial-gradient(circle at 50% 50%,
-                    rgba(186, 85, 255, .50) 0%,
-                    transparent 45%),
-
-                radial-gradient(circle at 85% 40%,
-                    rgba(65, 110, 242, .85) 0%,
-                    transparent 50%),
-
-                linear-gradient(135deg,
-                    #f24b0f,
-                    #6c69bf,
-                    #416ef2);
-        }
-    </style>
     <!-- GLOW -->
     <div class="absolute inset-0 overflow-hidden -z-10">
         <div
-            class="absolute w-[400px] h-[400px] md:w-[550px] md:h-[550px] lg:w-[700px] lg:h-[700px] bg-fuchsia-500/30
-            blur-3xl
-            rounded-full
-            top-1/2
-            left-1/2
-            -translate-x-1/2
-            -translate-y-1/2
+            class="
+                absolute
+                w-[400px]
+                h-[400px]
+                md:w-[550px]
+                md:h-[550px]
+                lg:w-[700px]
+                lg:h-[700px]
+                bg-fuchsia-500/30
+                blur-3xl
+                rounded-full
+                top-1/2
+                left-1/2
+                -translate-x-1/2
+                -translate-y-1/2
             ">
         </div>
     </div>
+
+    <!-- NAVBAR -->
     <x-navbar textColor="text-white" hoverColor="hover:border-white" logo="img/logo.png" />
 
-    <!-- HERO -->
+    <!-- CONTENIDO -->
     <div
         class="
-    relative
-    z-10
-    flex
-    flex-col
-    items-center
-    justify-center
-    text-center
-    min-h-[75vh]
-    max-w-7xl
-    mx-auto
-    px-6
-">
+            relative
+            z-10
+            flex
+            flex-col
+            items-center
+            justify-center
+            text-center
+            min-h-[70vh]
+            max-w-6xl
+            mx-auto
+            px-6
+        ">
 
-        <p class="text-2xl md:text-3xl lg:text-4xl mb-10">
+        <!-- TEXTO SUPERIOR -->
+        <p class="mb-6" style="
+        font-size: clamp(1.25rem, 1.8vw, 2.2rem);
+    ">
             Impulsa tu marca al éxito digital
         </p>
 
+        <!-- TITULO -->
         <h1 class="
-    text-5xl
-    md:text-6xl
-    lg:text-7xl
-    xl:text-8xl
-    font-bold
-    leading-none
-">
-
+        font-bold
+        leading-none
+        max-w-[1200px]
+        mx-auto
+    "
+            style="
+        font-size: clamp(2.8rem, 4.5vw, 5.5rem);
+    ">
             Transformación digital
             <br>
-
             con <span class="text-orange-500">visión</span>
-
         </h1>
 
-        <p class="
-    text-3xl
-    md:text-4xl
-    lg:text-5xl
-    font-bold
-    mt-10
-    md:mt-12
-">
+        <!-- SUBTITULO -->
+        <p class="font-bold mt-2" style="
+        font-size: clamp(1.8rem, 2.5vw, 3.5rem);
+    ">
             Haz crecer tu marca con estrategias innovadoras
         </p>
 
+        <!-- PILL -->
         <div
             class="
-    mt-12
-    border
-    border-white/50
-    rounded-full
-    px-8
-    md:px-12
-    lg:px-20
-    py-5
-    md:py-6
-    lg:py-8
-    text-lg
-    md:text-2xl
-    lg:text-3xl
-    max-w-[900px]
-    bg-white/5
-    backdrop-blur-sm
-">
-            Elevamos tu marca a través de la
-            creatividad e ideas que inspiran
-
+        mt-8
+        border
+        border-white
+        rounded-full
+        mx-auto
+        w-[clamp(500px,38vw,700px)]
+        px-14
+        py-6
+    ">
+            <p class="text-center leading-tight" style="
+            font-size: clamp(1.4rem, 1.8vw, 2.2rem);
+        ">
+                Elevamos tu marca a través de la
+                <br>
+                creatividad e ideas que inspiran
+            </p>
         </div>
 
     </div>
 
-    <div
+    <!-- UP YOUR BRAND -->
+    <img src="{{ asset('img/hero/up-your-brand.svg') }}" alt="Up your brand"
         class="
-    absolute
-    bottom-4
-    md:bottom-6
-    lg:bottom-8
-    right-4
-    md:right-8
-    lg:right-12
-    flex
-    items-center
-    gap-3
-    md:gap-4
-    text-lg
-    md:text-2xl
-    lg:text-3xl
-    font-medium
-">
-
-        <div class="w-12 h-[2px] bg-white"></div>
-
-        <span>up your</span>
-
-        <span
-            class="
-            bg-white
-            text-blue-600
-            px-4
-            py-1
-            rounded-full
-            font-bold
+            absolute
+            right-[2vw]
+            bottom-5
+            w-[clamp(220px,16vw,380px)]
+            h-auto
+            z-10
         ">
-            brand
-        </span>
-
-        <span class="text-3xl text-orange-400 leading-none">✦</span>
-        <span class="text-3xl text-orange-400 leading-none">✦</span>
-
-    </div>
-
 
 </section>

@@ -66,6 +66,6 @@
     <img
         src="{{ asset($logo) }}"
         alt="Up Dream"
-        class="h-20 md:h-28 w-auto">
+        class="h-12 md:h-16 w-auto">
 
 </nav>
