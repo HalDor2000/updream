@@ -22,7 +22,7 @@
             Inicio
         </a>
 
-        <a href="#portfolio"
+        <a href="#portafolio"
             class="
                 {{ $textColor }}
                 border-b-4
@@ -35,7 +35,7 @@
             Portafolio
         </a>
 
-        <a href="#services"
+        <a href="#servicios"
             class="
                 {{ $textColor }}
                 border-b-4
@@ -66,6 +66,6 @@
     <img
         src="{{ asset($logo) }}"
         alt="Up Dream"
-        class="h-12 md:h-16 w-auto">
+        class="h-20 md:h-28 w-auto">
 
 </nav>

@@ -2,7 +2,7 @@
     .gradient-bg {
         background: linear-gradient(135deg, #FF4500 0%, #6A5ACD 50%, #4169E1 100%);
         /* background-attachment: fixed; */
-        
+
     }
 </style>
 <section>
@@ -37,50 +37,48 @@
 
             </div>
 
-            <div class="flex items-center justify-center gap-16">
+            <div class="overflow-hidden relative"> 
+            <div class="flex items-center gap-16 animate-marcas whitespace-nowrap">
 
-                <img src="{{ asset('img/marcas/vitamina.png') }}" alt="Vitamina Mental" class="h-24 object-contain">
-
-                <img src="{{ asset('img/marcas/salvatier.png') }}" alt="Salvatier" class="h-20 object-contain">
-
-                <img src="{{ asset('img/marcas/susana.png') }}" alt="Susana Soriano" class="h-20 object-contain">
-
-                <img src="{{ asset('img/marcas/eat.png') }}" alt="Eat Nutrition" class="h-20 object-contain">
-
-                <img src="{{ asset('img/marcas/twin.png') }}" alt="Twins Garage" class="h-20 object-contain">
-
-                <button
-                    class="
-                        text-5xl
-                        font-light
-                        hover:text-orange-300
-                        transition
-                        cursor-pointer
-                    ">
-                    »
-                </button>
-
+                <img src="{{ asset('img/marcas/vitamina.png') }}" class="h-24 object-contain">
+                <img src="{{ asset('img/marcas/salvatier.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/susana.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/eat.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/twin.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/sofi.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/frozen.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/layco.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/tristate.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/fisiobienestar.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/summit.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/vuelvo.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/ceviche.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/sinmedida.png') }}" class="h-20 object-contain">
+                {{-- DUPLICADAS PARA LOOP --}}
+                <img src="{{ asset('img/marcas/vitamina.png') }}" class="h-24 object-contain">
+                <img src="{{ asset('img/marcas/salvatier.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/susana.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/eat.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/twin.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/sofi.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/frozen.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/layco.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/tristate.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/fisiobienestar.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/summit.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/vuelvo.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/ceviche.png') }}" class="h-20 object-contain">
+                <img src="{{ asset('img/marcas/sinmedida.png') }}" class="h-20 object-contain">
             </div>
-
+            </div> 
         </div>
 
     </div>
 
     <!-- CONTACT SECTION -->
-  {{--   <div
-        class="
-        relative
-        overflow-hidden
-        py-12
-        text-white
-        bg-gradient-to-r
-        from-orange-500
-        via-[#9f76c4]
-        to-[#4966ea]
-      "> --}}
 
-       <div
-        class="gradient-bg
+
+    <div class="gradient-bg
         relative
         overflow-hidden
         py-12
@@ -207,5 +205,25 @@
         </div>
 
     </div>
+
+    <style>
+        @keyframes marcas {
+
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-marcas {
+
+            width: max-content;
+
+            animation: marcas 30s linear infinite;
+        }
+    </style>
 
 </section>

@@ -3,28 +3,13 @@
 
         {{-- TEXTO --}}
         <div class="max-w-[540px]">
-            <h2
+            <img src="{{ asset('img/services/SOCIAL.webp') }}" alt="Social Media"
                 class="
-        relative
         mb-10
-        w-fit
-        font-heading
-        text-[46px]
-        font-bold
-        uppercase
-        leading-[0.95]
-        tracking-[0.24em]
-        text-[#4966ea]
-        md:text-[64px]
+        w-full
+        max-w-[620px]
+        h-auto
     ">
-                <span class="relative inline-block">
-                    Social
-                </span>
-                <br>
-                <span class="relative ml-[70px] inline-block md:ml-[96px]">
-                    Media
-                </span>
-            </h2>
 
             <div class="space-y-7 text-justify text-[18px] font-medium leading-[1.45] text-black md:text-[20px]">
                 <p>

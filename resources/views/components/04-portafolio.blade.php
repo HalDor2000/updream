@@ -1,4 +1,4 @@
-<section id="portfolio" class="relative overflow-hidden min-h-screen bg-[#f6f6f3] text-black  pb-40">
+<section id="portafolio" class="relative overflow-hidden min-h-screen bg-[#f6f6f3] text-black  pb-40">
 
     {{-- NAVBAR --}}
     <x-navbar textColor="text-[#4966ea]" hoverColor="hover:border-orange-500" logo="img/logo-azul.png" />
@@ -116,13 +116,6 @@
 
     </div>
 
-    {{-- ESTRELLA INFERIOR --}}
-    <img src="{{ asset('img/decor/star-orange.png') }}" alt=""
-        class="
-            absolute
-            bottom-8
-            right-8
-            w-28
-        ">
+
 
 </section>
