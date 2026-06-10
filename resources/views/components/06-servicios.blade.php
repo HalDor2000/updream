@@ -11,7 +11,7 @@
         background-repeat:no-repeat;
     ">
 
-    <x-navbar textColor="text-white" hoverColor="hover:border-white" logo="img/logo.png" />
+    <x-navbar textColor="text-white"  activeColor="border-white" hoverColor="hover:border-white" logo="img/logo.png" />
 
     <div
         class="

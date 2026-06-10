@@ -15,7 +15,7 @@
     <div class="absolute top-0 left-0 w-full h-[2px] bg-white"></div>
 
     {{-- NAVBAR --}}
-    <x-navbar textColor="text-white" hoverColor="hover:border-white" logo="img/logo.png" />
+    <x-navbar textColor="text-white"  activeColor="border-white" hoverColor="hover:border-white" logo="img/logo.png" />
 
     <div
         class="

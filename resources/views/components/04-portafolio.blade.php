@@ -1,7 +1,7 @@
 <section id="portafolio" class="relative overflow-hidden min-h-screen bg-[#f6f6f3] text-black  pb-40">
 
     {{-- NAVBAR --}}
-    <x-navbar textColor="text-[#4966ea]" hoverColor="hover:border-orange-500" logo="img/logo-azul.png" />
+    <x-navbar textColor="text-[#4966ea]" activeColor="border-orange-500" hoverColor="hover:border-orange-500" logo="img/logo-azul.png" />
 
     {{-- CONTENIDO --}}
     <div class="max-w-7xl mx-auto px-6 pt-8">
