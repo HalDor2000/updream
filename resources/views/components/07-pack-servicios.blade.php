@@ -1,6 +1,8 @@
 <section
     class="
-        py-24
+        py-14
+        sm:py-24
+        px-4
         text-white
         bg-gradient-to-r
         from-orange-500
@@ -21,7 +23,8 @@
             <span
                 class="
                     block
-                    text-[34px]
+                    text-[26px]
+                    sm:text-[34px]
                     md:text-[48px]
                     font-medium
                     leading-tight
@@ -33,7 +36,8 @@
             <span
                 class="
                     block
-                    text-[34px]
+                    text-[26px]
+                    sm:text-[34px]
                     md:text-[48px]
                     font-medium
                     leading-tight
@@ -46,7 +50,8 @@
                 class="
                     block
                     mt-2
-                    text-[64px]
+                    text-[48px]
+                    sm:text-[64px]
                     md:text-[84px]
                     font-bold
                     leading-none
@@ -76,13 +81,16 @@
             class="
                 inline-block
                 mt-8
-                px-10
-                py-3
+                px-8
+                sm:px-10
+                py-2.5
+                sm:py-3
                 bg-orange-500
                 border-2
                 border-white
                 rounded-full
-                text-2xl
+                text-lg
+                sm:text-2xl
                 font-bold
                 uppercase
                 hover:scale-105

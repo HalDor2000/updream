@@ -21,8 +21,10 @@
         class="
             max-w-7xl
             mx-auto
-            px-8
-            pt-16
+            px-4
+            sm:px-8
+            pt-8
+            sm:pt-16
             pb-10
         ">
 
@@ -30,17 +32,20 @@
             class="
                 grid
                 lg:grid-cols-2
-                gap-16
+                gap-10
+                sm:gap-16
                 items-center
             ">
 
             {{-- IZQUIERDA --}}
-            <div>
+            <div class="hidden sm:block">
 
                 <img src="{{ asset('img/footer/proximo_nivel_footer.webp') }}" alt="Próximo Nivel"
                     class="
                         w-full
                         max-w-[700px]
+                        mx-auto
+                        lg:mx-0
                     ">
 
             </div>
@@ -49,24 +54,31 @@
             <div
                 class="
                     bg-[#ececec]
-                    rounded-[50px]
-                    p-10
+                    rounded-[24px]
+                    sm:rounded-[40px]
+                    lg:rounded-[50px]
+                    p-6
+                    sm:p-8
+                    lg:p-10
                     text-black
                 ">
 
                 <h2
                     class="
                         text-[#4966ea]
-                        text-5xl
+                        text-3xl
+                        sm:text-4xl
+                        lg:text-5xl
                         font-bold
-                        mb-8
+                        mb-6
+                        sm:mb-8
                     ">
                     Contáctanos
                 </h2>
 
                 @if ($errors->any())
 
-                    <div class="mb-4 rounded-lg bg-red-500 text-white px-4 py-3">
+                    <div class="mb-4 rounded-lg bg-red-500 text-white px-4 py-3 text-sm sm:text-base">
 
                         <ul class="list-disc ml-4">
 
@@ -83,13 +95,15 @@
                 @if (session('success'))
                     <div
                         class="
-            mb-4
-            rounded-lg
-            bg-green-500
-            text-white
-            px-4
-            py-3
-        ">
+                            mb-4
+                            rounded-lg
+                            bg-green-500
+                            text-white
+                            px-4
+                            py-3
+                            text-sm
+                            sm:text-base
+                        ">
                         {{ session('success') }}
                     </div>
                 @endif
@@ -105,6 +119,8 @@
                                 text-[#4966ea]
                                 font-bold
                                 mb-2
+                                text-sm
+                                sm:text-base
                             ">
                             Nombre
                         </label>
@@ -114,8 +130,12 @@
                                 w-full
                                 rounded-full
                                 bg-white
-                                px-5
-                                py-3
+                                px-4
+                                sm:px-5
+                                py-2.5
+                                sm:py-3
+                                text-sm
+                                sm:text-base
                             "
                             name="nombre">
 
@@ -124,8 +144,10 @@
                     <div
                         class="
                             grid
-                            grid-cols-2
-                            gap-5
+                            grid-cols-1
+                            sm:grid-cols-2
+                            gap-4
+                            sm:gap-5
                             mb-5
                         ">
 
@@ -137,6 +159,8 @@
                                     text-[#4966ea]
                                     font-bold
                                     mb-2
+                                    text-sm
+                                    sm:text-base
                                 ">
                                 Teléfono
                             </label>
@@ -146,8 +170,12 @@
                                     w-full
                                     rounded-full
                                     bg-white
-                                    px-5
-                                    py-3
+                                    px-4
+                                    sm:px-5
+                                    py-2.5
+                                    sm:py-3
+                                    text-sm
+                                    sm:text-base
                                 "
                                 name="telefono">
 
@@ -161,6 +189,8 @@
                                     text-[#4966ea]
                                     font-bold
                                     mb-2
+                                    text-sm
+                                    sm:text-base
                                 ">
                                 Email
                             </label>
@@ -170,8 +200,12 @@
                                     w-full
                                     rounded-full
                                     bg-white
-                                    px-5
-                                    py-3
+                                    px-4
+                                    sm:px-5
+                                    py-2.5
+                                    sm:py-3
+                                    text-sm
+                                    sm:text-base
                                 "
                                 name="email">
 
@@ -187,6 +221,8 @@
                                 text-[#4966ea]
                                 font-bold
                                 mb-2
+                                text-sm
+                                sm:text-base
                             ">
                             Mensaje
                         </label>
@@ -194,10 +230,15 @@
                         <textarea rows="5"
                             class="
                                 w-full
-                                rounded-[30px]
+                                rounded-[20px]
+                                sm:rounded-[30px]
                                 bg-white
-                                px-5
-                                py-4
+                                px-4
+                                sm:px-5
+                                py-3
+                                sm:py-4
+                                text-sm
+                                sm:text-base
                             "
                             name="mensaje"></textarea>
 
@@ -215,7 +256,8 @@
                         <span
                             class="
                                 text-[#ff5b12]
-                                text-2xl
+                                text-xl
+                                sm:text-2xl
                             ">
                             ✦
                         </span>
@@ -224,10 +266,13 @@
                             class="
                                 bg-[#4966ea]
                                 text-white
-                                px-8
+                                px-6
+                                sm:px-8
                                 py-2
                                 rounded-full
                                 uppercase
+                                text-sm
+                                sm:text-base
                             ">
                             Enviar
                         </button>
@@ -244,15 +289,20 @@
         <div
             class="
                 flex
+                flex-col
+                sm:flex-row
                 justify-between
-                items-end
+                items-center
+                sm:items-end
+                gap-6
                 mt-10
             ">
 
             {{-- UP YOUR BRAND --}}
             <img src="{{ asset('img/hero/up-your-brand.svg') }}" alt=""
                 class="
-                    h-12
+                    h-10
+                    sm:h-12
                     object-contain
                 ">
 
@@ -261,23 +311,24 @@
                 class="
                     flex
                     items-center
-                    gap-6
+                    gap-4
+                    sm:gap-6
                 ">
 
                 <a href="#">
-                    <img src="{{ asset('img/social/tiktok.png') }}" class="h-10 w-10">
+                    <img src="{{ asset('img/social/tiktok.png') }}" class="h-8 w-8 sm:h-10 sm:w-10">
                 </a>
 
                 <a href="#">
-                    <img src="{{ asset('img/social/instagram.png') }}" class="h-10 w-10">
+                    <img src="{{ asset('img/social/instagram.png') }}" class="h-8 w-8 sm:h-10 sm:w-10">
                 </a>
 
                 <a href="#">
-                    <img src="{{ asset('img/social/facebook.png') }}" class="h-10 w-10">
+                    <img src="{{ asset('img/social/facebook.png') }}" class="h-8 w-8 sm:h-10 sm:w-10">
                 </a>
 
                 <a href="#">
-                    <img src="{{ asset('img/social/whatsap.png') }}" class="h-10 w-10">
+                    <img src="{{ asset('img/social/whatsap.png') }}" class="h-8 w-8 sm:h-10 sm:w-10">
                 </a>
 
             </div>

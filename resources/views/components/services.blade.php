@@ -1,8 +1,8 @@
-<section id="services" class="bg-[#f6f6f3] px-6 pt-4 pb-20 text-black md:px-12 lg:px-20">
+<section id="services" class="bg-[#f6f6f3] px-4 pt-4 pb-12 sm:px-6 sm:pb-20 text-black md:px-12 lg:px-20">
 
     <div class="mx-auto max-w-[1180px]">
 
-        <div class="space-y-16">
+        <div class="space-y-10 sm:space-y-16">
 
             {{-- DISEÑO Y BRANDING --}}
             <x-service-block

@@ -34,7 +34,7 @@
         : 'lg:justify-start';
 @endphp
 
-<div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+<div class="grid items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-16">
 
     {{-- IMAGEN --}}
     <div class="{{ $imageOrder }} flex justify-center">
@@ -104,9 +104,13 @@
         <div
             class="
                 max-w-[540px]
-                space-y-7
+                mx-auto
+                lg:mx-0
+                space-y-5
+                sm:space-y-7
                 text-justify
-                text-[18px]
+                text-base
+                sm:text-[18px]
                 font-medium
                 leading-[1.45]
                 text-black
@@ -119,13 +123,17 @@
         {{-- BOTON --}}
         <div
             class="
-                mt-10
+                mt-8
+                sm:mt-10
                 flex
                 items-center
+                justify-center
                 gap-3
                 {{ $buttonAlign }}
                 w-full
                 max-w-[540px]
+                mx-auto
+                lg:mx-0
             "
         >
 

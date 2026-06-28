@@ -1,12 +1,13 @@
 <section id="servicios" class="
         relative
         overflow-hidden
-        min-h-screen
+        min-h-[70vh]
+        sm:min-h-screen
         text-white
     "
     style="
         background-image:url('{{ asset('img/backgrounds/servicios.webp') }}');
-        background-size:100% 100%;
+        background-size:cover;
         background-position:center;
         background-repeat:no-repeat;
     ">
@@ -21,17 +22,17 @@
             flex-col
             items-center
             text-center
-            pt-10
-            px-6
+            pt-6
+            sm:pt-10
+            px-4
+            sm:px-6
+            pb-12
         ">
 
         <img src="{{ asset('img/cta/proximo_nivel.svg') }}" alt="Te llevamos al próximo nivel"
             class="
-            relative
-        -mt 30
-                w-[57vw]
+                w-full
                 max-w-[950px]
-                min-w-[450px]
                 h-auto
             ">
 

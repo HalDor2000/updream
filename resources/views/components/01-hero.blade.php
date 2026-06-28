@@ -6,7 +6,7 @@
     "
     style="
         background-image:url('{{ asset('img/hero/hero-bg.webp') }}');
-        background-size:100% 100%;
+        background-size:cover;
         background-position:center;
         background-repeat:no-repeat;
     ">
@@ -16,8 +16,10 @@
         <div
             class="
                 absolute
-                w-[400px]
-                h-[400px]
+                w-[280px]
+                h-[280px]
+                sm:w-[400px]
+                sm:h-[400px]
                 md:w-[550px]
                 md:h-[550px]
                 lg:w-[700px]
@@ -46,58 +48,63 @@
             items-center
             justify-center
             text-center
-            min-h-[70vh]
+            min-h-[60vh]
+            sm:min-h-[70vh]
             max-w-6xl
             mx-auto
-            px-6
+            px-4
+            sm:px-6
+            pb-24
+            sm:pb-0
         ">
 
         <!-- TEXTO SUPERIOR -->
-        <p class="mb-6" style="
-        font-size: clamp(1.25rem, 1.8vw, 2.2rem);
-    ">
+        <p class="mb-4 sm:mb-6 text-base sm:text-xl md:text-2xl">
             Impulsa tu marca al éxito digital
         </p>
 
         <!-- TITULO -->
         <h1 class="
-        font-bold
-        leading-none
-        max-w-[1200px]
-        mx-auto
-    "
-            style="
-        font-size: clamp(2.8rem, 4.5vw, 5.5rem);
-    ">
+            font-bold
+            leading-none
+            max-w-[1200px]
+            mx-auto
+            text-4xl
+            sm:text-5xl
+            md:text-6xl
+            lg:text-7xl
+        ">
             Transformación digital
             <br>
             con <span class="text-orange-500">visión</span>
         </h1>
 
         <!-- SUBTITULO -->
-        <p class="font-bold mt-2" style="
-        font-size: clamp(1.8rem, 2.5vw, 3.5rem);
-    ">
+        <p class="font-bold mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl px-2">
             Haz crecer tu marca con estrategias innovadoras
         </p>
 
         <!-- PILL -->
         <div
             class="
-        mt-8
-        border
-        border-white
-        rounded-full
-        mx-auto
-        w-[clamp(500px,38vw,700px)]
-        px-14
-        py-6
-    ">
-            <p class="text-center leading-tight" style="
-            font-size: clamp(1.4rem, 1.8vw, 2.2rem);
-        ">
+                mt-6
+                sm:mt-8
+                border
+                border-white
+                rounded-full
+                mx-auto
+                w-full
+                max-w-[700px]
+                px-5
+                sm:px-10
+                md:px-14
+                py-4
+                sm:py-6
+            ">
+            <p class="text-center leading-tight text-base sm:text-lg md:text-xl lg:text-2xl">
                 Elevamos tu marca a través de la
-                <br>
+                <br class="hidden sm:block">
+                <span class="sm:hidden"> </span>
                 creatividad e ideas que inspiran
             </p>
         </div>
@@ -108,11 +115,16 @@
     <img src="{{ asset('img/hero/up-your-brand.svg') }}" alt="Up your brand"
         class="
             absolute
-            right-[2vw]
-            bottom-5
-            w-[clamp(220px,16vw,380px)]
+            right-2
+            sm:right-[2vw]
+            bottom-3
+            sm:bottom-5
+            w-[140px]
+            sm:w-[clamp(180px,16vw,380px)]
             h-auto
             z-10
+            opacity-80
+            sm:opacity-100
         ">
 
 </section>
